@@ -1,0 +1,66 @@
+{
+  "name": "react-slider-page",
+  "version": "1.0.0",
+  "description": "A full screen page slider to slide with mouse, arrow-key and touches",
+  "main": "./lib/index.js",
+  "module": "es/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "build:examples": "cd ./examples && npm install && npm run build",
+    "build:publish:examples": "npm run build:examples && rimraf examples/node_modules && gh-pages -d examples",
+    "clean": "rimraf lib es",
+    "format": "prettier --write 'src/**/*.{js,css}'",
+    "lint": "eslint .",
+    "prebuild": "npm run clean",
+    "prepare": "npm run build",
+    "pretest": "npm run lint",
+    "start:examples": "cd ./examples && npm install && npm run start:dev"
+  },
+  "keywords": [
+    "react slider",
+    "slider",
+    "fullpage slider",
+    "swipe",
+    "swipeable",
+    "react-component"
+  ],
+  "files": [
+    "lib",
+    "es",
+    "src"
+  ],
+  "author": {
+    "name": "Venkatesh Rao",
+    "email": "venkatvr897@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.7",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "@babel/runtime": "^7.7.7",
+    "@types/react": "^16.9.17",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.9.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.17.0",
+    "gh-pages": "^1.0.0",
+    "prettier": "1.15.3",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "rimraf": "^2.7.1",
+    "rollup": "^1.27.14",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-postcss": "^2.0.3"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0-0"
+  }
+}
