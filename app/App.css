@@ -1,0 +1,15 @@
+#html {
+  background: linear-gradient(225deg, #f16529, #ff8e93);
+}
+#css {
+  background: linear-gradient(#2965f1, #5183f7);
+}
+#vue {
+  background: linear-gradient(#d2fcad, #22eaeb);
+}
+#react {
+  background: linear-gradient(#61dbfb, #9de5f7);
+}
+#js {
+  background: linear-gradient(#f0db4f, rgb(243, 225, 109));
+}
