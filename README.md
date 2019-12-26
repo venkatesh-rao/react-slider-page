@@ -6,7 +6,7 @@ React full-page slider component component
 
 ### Api
 
-Use React-hooks or a Component and set your swipe(d) handlers.
+**Note:** Add css to your sliding <div />s
 
 ```js
 import SliderPage from 'react-slider-page'
