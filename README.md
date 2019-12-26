@@ -6,7 +6,7 @@ React full-page slider component component
 
 ### Api
 
-**Note:** Add css to your sliding <div />s
+**Note:** Add css to your sliding ```js<section />```s
 
 ```js
 import SliderPage from 'react-slider-page'
